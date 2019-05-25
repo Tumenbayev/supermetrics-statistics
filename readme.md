@@ -2,6 +2,8 @@
 
 _Following project will provide information about average posts length, maximum post length per month and so on_
 
+_PSR-2 coding standards was used_
+
 **How to test**
 
 * Create your .env file based on `.env.example`
