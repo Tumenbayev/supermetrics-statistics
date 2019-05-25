@@ -11,14 +11,22 @@ class Post extends ApiRepository
      */
     public function getPostsByParameters()
     {
-        $result = $this->apiQuery('posts');
+        try {
+            $result = $this->apiQuery('posts');
+        } catch (\Exception $e) {
+            // Will try to regenerate token
+            $this->apiQuery('register');
+
+            $result = $this->apiQuery('posts');
+        }
+
         $posts = [];
 
         if ($this->isResponseValid($result)) {
             foreach ($result['data']['posts'] as $post) {
                 $posts[$post['id']] = $post;
             }
-        };
+        }
 
         return $posts;
     }

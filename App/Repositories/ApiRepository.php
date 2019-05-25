@@ -92,6 +92,6 @@ abstract class ApiRepository extends BaseRepository
      */
     protected function isResponseValid(array $data): bool
     {
-        return !empty($data) || !is_array($data) || !array_key_exists('error', $data) && array_key_exists('data', $data);
+        return ! empty($data) || ! is_array($data) || ! array_key_exists('error', $data) && array_key_exists('data', $data);
     }
 }

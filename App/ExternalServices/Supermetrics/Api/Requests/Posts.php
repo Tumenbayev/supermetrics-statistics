@@ -3,14 +3,13 @@
 namespace App\ExternalServices\Supermetrics\Api\Requests;
 
 use App\ExternalServices\Supermetrics\Api\BaseCommand;
-use Symfony\Contracts\HttpClient\Exception\TransportExceptionInterface;
 
 class Posts extends BaseCommand
 {
+    const REQUEST_METHOD = 'GET';
+
     protected $requestUri = 'assignment/posts';
 
-    const REQUEST_METHOD = 'GET';
-    
     protected $parameters = [];
 
     /**

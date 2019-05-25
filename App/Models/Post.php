@@ -1,4 +1,5 @@
 <?php
+
 namespace App\Models;
 
 class Post
@@ -50,7 +51,7 @@ class Post
      * @param string $id
      * @return Post
      */
-    public function setId(string $id): Post
+    public function setId(string $id): self
     {
         $this->id = $id;
 
@@ -69,7 +70,7 @@ class Post
      * @param string $fromName
      * @return Post
      */
-    public function setFromName(string $fromName): Post
+    public function setFromName(string $fromName): self
     {
         $this->fromName = $fromName;
 
@@ -88,7 +89,7 @@ class Post
      * @param string $fromId
      * @return Post
      */
-    public function setFromId(string $fromId): Post
+    public function setFromId(string $fromId): self
     {
         $this->fromId = $fromId;
 
@@ -107,7 +108,7 @@ class Post
      * @param string $message
      * @return Post
      */
-    public function setMessage(string $message): Post
+    public function setMessage(string $message): self
     {
         $this->message = $message;
 
@@ -126,7 +127,7 @@ class Post
      * @param string $type
      * @return Post
      */
-    public function setType(string $type): Post
+    public function setType(string $type): self
     {
         $this->type = $type;
 
@@ -145,7 +146,7 @@ class Post
      * @param string $createdAt
      * @return Post
      */
-    public function setCreatedAt(string $createdAt): Post
+    public function setCreatedAt(string $createdAt): self
     {
         $this->createdAt = $createdAt;
 

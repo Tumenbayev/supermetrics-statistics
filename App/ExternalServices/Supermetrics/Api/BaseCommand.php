@@ -1,4 +1,5 @@
 <?php
+
 namespace App\ExternalServices\Supermetrics\Api;
 
 use App\ExternalServices\Supermetrics\Client;
