@@ -1,9 +1,12 @@
 <?php
 
-namespace App\Http\LogicWrapper;
+namespace App\Http\LogicWrappers;
 
 class StatisticsWrapper extends AbstractWrapper
 {
+    /**
+     * @return $this
+     */
     public function execute()
     {
         $this->setAveragePostLengthByMonth();
@@ -14,6 +17,9 @@ class StatisticsWrapper extends AbstractWrapper
         return $this;
     }
 
+    /**
+     * @return array|mixed
+     */
     public function getResult()
     {
         return $this->result;

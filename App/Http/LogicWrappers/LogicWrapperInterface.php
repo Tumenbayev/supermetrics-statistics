@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\LogicWrapper;
+namespace App\Http\LogicWrappers;
 
 interface LogicWrapperInterface
 {

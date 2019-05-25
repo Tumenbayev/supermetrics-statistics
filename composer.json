@@ -15,6 +15,7 @@
     }
   },
   "require-dev": {
-    "symplify/easy-coding-standard": "*"
+    "symplify/easy-coding-standard": "*",
+    "phpunit/phpunit": "*"
   }
 }

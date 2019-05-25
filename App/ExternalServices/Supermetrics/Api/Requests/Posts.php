@@ -13,7 +13,8 @@ class Posts extends BaseCommand
     protected $parameters = [];
 
     /**
-     * @return bool|\Psr\Http\Message\StreamInterface
+     * @return mixed
+     * @throws \Exception
      */
     public function execute()
     {

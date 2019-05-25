@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\LogicWrapper\StatisticsWrapper;
+use App\Http\LogicWrappers\StatisticsWrapper;
 use App\Models\Post;
 use App\Repositories\Post as PostRepository;
 

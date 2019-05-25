@@ -33,12 +33,13 @@ class Client
     }
 
     /**
-     * @param $method
-     * @param $url
+     * @param string $method
+     * @param string $url
      * @param array $options
-     * @return bool|\Psr\Http\Message\StreamInterface
+     * @return mixed
+     * @throws \Exception
      */
-    public function request($method, $url, $options = [])
+    public function request(string $method, string $url, array $options = [])
     {
         $client = new GuzzleHttp\Client();
 
