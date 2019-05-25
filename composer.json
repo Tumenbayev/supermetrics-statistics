@@ -1,0 +1,20 @@
+{
+  "name": "tumenbayev/supermertrics",
+  "type": "project",
+  "require": {
+    "php":  "^7.2",
+    "ext-json": "*",
+    "ext-mbstring": "*",
+    "noahbuscher/macaw": "dev-master",
+    "guzzlehttp/guzzle": "~6.0",
+    "vlucas/phpdotenv": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "App\\": "App"
+    }
+  },
+  "require-dev": {
+    "symplify/easy-coding-standard": "*"
+  }
+}
