@@ -1,4 +1,3 @@
-**Supermetrics Assignment Task**
 
 _Following project will provide information about average posts length, maximum post length per month and so on_
 
